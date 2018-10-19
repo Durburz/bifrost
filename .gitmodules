@@ -4,3 +4,6 @@
 [submodule "lib/kicad-library"]
 	path = lib/kicad-library
 	url = https://github.com/bfrigon/kicad-library.git
+[submodule "lib/digikey-kicad-library"]
+	path = lib/digikey-kicad-library
+	url = https://github.com/digikey/digikey-kicad-library.git
