@@ -1,0 +1,6 @@
+[submodule "lib/kicad_lib"]
+	path = lib/kicad_lib
+	url = git@gitlab.com:Durburz/kicad_lib.git
+[submodule "lib/kicad-library"]
+	path = lib/kicad-library
+	url = https://github.com/bfrigon/kicad-library.git
