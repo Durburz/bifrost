@@ -4137,38 +4137,6 @@ Entry Wire Line
 	4100 5500 4200 5400
 Entry Wire Line
 	4200 5500 4300 5400
-Entry Wire Line
-	4700 5600 4800 5500
-Wire Wire Line
-	4800 4650 4800 5500
-Entry Wire Line
-	4800 5600 4900 5500
-Entry Wire Line
-	4900 5600 5000 5500
-Entry Wire Line
-	5000 5600 5100 5500
-Entry Wire Line
-	5100 5600 5200 5500
-Entry Wire Line
-	5200 5600 5300 5500
-Entry Wire Line
-	5300 5600 5400 5500
-Entry Wire Line
-	5400 5600 5500 5500
-Wire Wire Line
-	4900 4650 4900 5500
-Wire Wire Line
-	5000 4650 5000 5500
-Wire Wire Line
-	5100 4650 5100 5500
-Wire Wire Line
-	5200 4650 5200 5500
-Wire Wire Line
-	5300 4650 5300 5500
-Wire Wire Line
-	5400 4650 5400 5500
-Wire Wire Line
-	5500 4650 5500 5500
 Text Label 3600 5300 0    50   ~ 0
 1
 Text Label 3700 5300 0    50   ~ 0
@@ -4185,32 +4153,136 @@ Text Label 4200 5300 0    50   ~ 0
 7
 Text Label 4300 5300 0    50   ~ 0
 8
-Text Label 4800 5300 0    50   ~ 0
-A
-Text Label 4900 5300 0    50   ~ 0
-B
-Text Label 5000 5300 0    50   ~ 0
-C
-Text Label 5100 5300 0    50   ~ 0
-D
-Text Label 5200 5300 0    50   ~ 0
-E
-Text Label 5300 5300 0    50   ~ 0
-F
-Text Label 5400 5300 0    50   ~ 0
-G
-Text Label 5500 5300 0    50   ~ 0
-H
 Text GLabel 5800 4850 3    50   Input ~ 0
 D_LED
 Wire Wire Line
 	5800 4650 5800 4850
+$Comp
+L Connector:Conn_01x04_Female J4
+U 1 1 627FFE69
+P 5550 6250
+F 0 "J4" H 5577 6226 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5577 6135 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Right" H 5550 6250 50  0001 C CNN
+F 3 "~" H 5550 6250 50  0001 C CNN
+	1    5550 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 62800134
+P 4350 6250
+F 0 "J3" H 4456 6528 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 4456 6437 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 4350 6250 50  0001 C CNN
+F 3 "~" H 4350 6250 50  0001 C CNN
+	1    4350 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 628FEDA1
+P 5200 6600
+F 0 "#PWR0101" H 5200 6650 30  0001 C CNN
+F 1 "GND" H 5200 6475 30  0001 C CNN
+F 2 "" H 5200 6600 60  0000 C CNN
+F 3 "" H 5200 6600 60  0000 C CNN
+	1    5200 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 628FF03D
+P 5200 6000
+F 0 "#PWR0102" H 5200 6225 30  0001 C CNN
+F 1 "+5V" V 5125 6000 30  0001 C CNN
+F 2 "" H 5200 6000 60  0000 C CNN
+F 3 "" H 5200 6000 60  0000 C CNN
+	1    5200 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 6150 5200 6150
+Wire Wire Line
+	4550 6250 4800 6250
+Wire Wire Line
+	4550 6350 4900 6350
+Wire Wire Line
+	4550 6450 5200 6450
+Wire Wire Line
+	5200 6600 5200 6450
+Connection ~ 5200 6450
+Wire Wire Line
+	5200 6450 5350 6450
+Wire Wire Line
+	5200 6000 5200 6150
+Connection ~ 5200 6150
+Wire Wire Line
+	5200 6150 5350 6150
+Wire Wire Line
+	4800 4650 4800 6250
+Connection ~ 4800 6250
+Wire Wire Line
+	4800 6250 5350 6250
+Wire Wire Line
+	4900 4650 4900 6350
+Connection ~ 4900 6350
+Wire Wire Line
+	4900 6350 5350 6350
+Entry Wire Line
+	6400 5600 6500 5500
+Entry Wire Line
+	6300 5600 6400 5500
+Entry Wire Line
+	6200 5600 6300 5500
+Entry Wire Line
+	6100 5600 6200 5500
+Entry Wire Line
+	6000 5600 6100 5500
+Entry Wire Line
+	5900 5600 6000 5500
+Wire Wire Line
+	6000 4650 6000 5500
+Wire Wire Line
+	6100 4650 6100 5500
+Wire Wire Line
+	6200 4650 6200 5500
+Wire Wire Line
+	6300 4650 6300 5500
+Wire Wire Line
+	6400 4650 6400 5500
+Wire Wire Line
+	6500 4650 6500 5500
+Entry Wire Line
+	5400 5600 5500 5500
+Entry Wire Line
+	5300 5600 5400 5500
+Wire Wire Line
+	5400 4650 5400 5500
+Wire Wire Line
+	5500 5500 5500 4650
 Wire Bus Line
 	800  5600 800  10700
 Wire Bus Line
-	800  5600 5400 5600
+	800  5600 6400 5600
 Wire Bus Line
 	1800 7250 9600 7250
 Wire Bus Line
 	1800 5500 4200 5500
+Text Label 5400 5300 0    50   ~ 0
+A
+Text Label 5500 5300 0    50   ~ 0
+B
+Text Label 6000 5300 0    50   ~ 0
+C
+Text Label 6100 5300 0    50   ~ 0
+D
+Text Label 6200 5300 0    50   ~ 0
+E
+Text Label 6300 5300 0    50   ~ 0
+F
+Text Label 6400 5300 0    50   ~ 0
+G
+Text Label 6500 5300 0    50   ~ 0
+H
 $EndSCHEMATC
