@@ -5,10 +5,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "bifröst_master"
+Date "2018-10-28"
+Rev "0"
+Comp "valkyr"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -3594,7 +3594,7 @@ $EndComp
 Wire Wire Line
 	9050 1000 8350 1000
 Text GLabel 8350 1000 0    50   Input ~ 0
-D_LED
+DIN_LED
 Connection ~ 8750 700 
 Connection ~ 8850 6900
 $Comp
@@ -4153,41 +4153,17 @@ Text Label 4200 5300 0    50   ~ 0
 7
 Text Label 4300 5300 0    50   ~ 0
 8
-Text GLabel 5800 4850 3    50   Input ~ 0
-D_LED
-Wire Wire Line
-	5800 4650 5800 4850
-$Comp
-L Connector:Conn_01x04_Female J4
-U 1 1 627FFE69
-P 5550 6250
-F 0 "J4" H 5577 6226 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 5577 6135 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Right" H 5550 6250 50  0001 C CNN
-F 3 "~" H 5550 6250 50  0001 C CNN
-	1    5550 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x04_Male J3
-U 1 1 62800134
-P 4350 6250
-F 0 "J3" H 4456 6528 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 4456 6437 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 4350 6250 50  0001 C CNN
-F 3 "~" H 4350 6250 50  0001 C CNN
-	1    4350 6250
-	1    0    0    -1  
-$EndComp
+Text GLabel 4600 6800 3    50   Input ~ 0
+DIN_LED
 $Comp
 L power:GND #PWR0101
 U 1 1 628FEDA1
-P 5200 6600
-F 0 "#PWR0101" H 5200 6650 30  0001 C CNN
-F 1 "GND" H 5200 6475 30  0001 C CNN
-F 2 "" H 5200 6600 60  0000 C CNN
-F 3 "" H 5200 6600 60  0000 C CNN
-	1    5200 6600
+P 5200 7000
+F 0 "#PWR0101" H 5200 7050 30  0001 C CNN
+F 1 "GND" H 5200 6875 30  0001 C CNN
+F 2 "" H 5200 7000 60  0000 C CNN
+F 3 "" H 5200 7000 60  0000 C CNN
+	1    5200 7000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -4210,7 +4186,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 6450 5200 6450
 Wire Wire Line
-	5200 6600 5200 6450
+	5200 7000 5200 6450
 Connection ~ 5200 6450
 Wire Wire Line
 	5200 6450 5350 6450
@@ -4261,14 +4237,6 @@ Wire Wire Line
 	5400 4650 5400 5500
 Wire Wire Line
 	5500 5500 5500 4650
-Wire Bus Line
-	800  5600 800  10700
-Wire Bus Line
-	800  5600 6400 5600
-Wire Bus Line
-	1800 7250 9600 7250
-Wire Bus Line
-	1800 5500 4200 5500
 Text Label 5400 5300 0    50   ~ 0
 A
 Text Label 5500 5300 0    50   ~ 0
@@ -4285,4 +4253,83 @@ Text Label 6400 5300 0    50   ~ 0
 G
 Text Label 6500 5300 0    50   ~ 0
 H
+$Comp
+L Connector:Conn_01x06_Female J?
+U 1 1 5BFC72F9
+P 5550 6350
+F 0 "J?" H 5577 6326 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 5577 6235 50  0000 L CNN
+F 2 "" H 5550 6350 50  0001 C CNN
+F 3 "~" H 5550 6350 50  0001 C CNN
+	1    5550 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J?
+U 1 1 5BFC75D4
+P 4350 6350
+F 0 "J?" H 4456 6728 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 4456 6637 50  0000 C CNN
+F 2 "" H 4350 6350 50  0001 C CNN
+F 3 "~" H 4350 6350 50  0001 C CNN
+	1    4350 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 6550 4600 6550
+Wire Wire Line
+	4550 6650 5050 6650
+Wire Wire Line
+	4600 6800 4600 6550
+Text GLabel 15750 7000 3    50   Input ~ 0
+DOUT_LED
+Text GLabel 4950 6800 3    50   Input ~ 0
+DOUT_LED
+Wire Wire Line
+	4950 6800 4950 6550
+Wire Wire Line
+	4950 6550 5350 6550
+Wire Wire Line
+	15600 6600 15750 6600
+Wire Wire Line
+	15750 6600 15750 7000
+Wire Wire Line
+	5800 5750 5050 5750
+Wire Wire Line
+	5050 5750 5050 6650
+Wire Wire Line
+	5800 4650 5800 5750
+Connection ~ 5050 6650
+Wire Wire Line
+	5050 6650 5300 6650
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C7A306E
+P 6050 6950
+F 0 "JP?" H 6050 7155 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 6050 7064 50  0000 C CNN
+F 2 "" H 6050 6950 50  0001 C CNN
+F 3 "~" H 6050 6950 50  0001 C CNN
+	1    6050 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 6650 5300 6950
+Wire Wire Line
+	5300 6950 5900 6950
+Connection ~ 5300 6650
+Wire Wire Line
+	5300 6650 5350 6650
+Text GLabel 6450 6950 2    50   Input ~ 0
+DIN_LED
+Wire Wire Line
+	6200 6950 6450 6950
+Wire Bus Line
+	800  5600 800  10700
+Wire Bus Line
+	800  5600 6400 5600
+Wire Bus Line
+	1800 7250 9600 7250
+Wire Bus Line
+	1800 5500 4200 5500
 $EndSCHEMATC
