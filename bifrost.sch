@@ -58,17 +58,6 @@ F 3 "~" H 1750 7550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L bifrost-rescue:AVR-ISP-6-Connector J2
-U 1 1 5BD4D560
-P 1500 4100
-F 0 "J2" V 1083 4150 50  0000 C CNN
-F 1 "AVR-ISP-6" V 1174 4150 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" V 1250 4150 50  0001 C CNN
-F 3 " ~" H 225 3550 50  0001 C CNN
-	1    1500 4100
-	0    1    1    0   
-$EndComp
-$Comp
 L LED:SK6812 D1
 U 1 1 5BD4DADA
 P 9350 1000
@@ -3087,33 +3076,25 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR012
 U 1 1 5F3208C7
-P 2050 3850
-F 0 "#PWR012" H 2050 4075 30  0001 C CNN
-F 1 "+5V" V 1975 3850 30  0001 C CNN
-F 2 "" H 2050 3850 60  0000 C CNN
-F 3 "" H 2050 3850 60  0000 C CNN
-	1    2050 3850
+P 1400 4550
+F 0 "#PWR012" H 1400 4775 30  0001 C CNN
+F 1 "+5V" V 1325 4550 30  0001 C CNN
+F 2 "" H 1400 4550 60  0000 C CNN
+F 3 "" H 1400 4550 60  0000 C CNN
+	1    1400 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR013
 U 1 1 5F320B3F
-P 1050 4150
-F 0 "#PWR013" H 1050 4200 30  0001 C CNN
-F 1 "GND" H 1050 4025 30  0001 C CNN
-F 2 "" H 1050 4150 60  0000 C CNN
-F 3 "" H 1050 4150 60  0000 C CNN
-	1    1050 4150
+P 1400 5050
+F 0 "#PWR013" H 1400 5100 30  0001 C CNN
+F 1 "GND" H 1400 4925 30  0001 C CNN
+F 2 "" H 1400 5050 60  0000 C CNN
+F 3 "" H 1400 5050 60  0000 C CNN
+	1    1400 5050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 4000 2050 4000
-Wire Wire Line
-	2050 4000 2050 3850
-Wire Wire Line
-	1100 4000 1050 4000
-Wire Wire Line
-	1050 4000 1050 4150
 Wire Wire Line
 	4700 3450 4700 2900
 Wire Wire Line
@@ -3211,31 +3192,9 @@ Wire Wire Line
 Wire Wire Line
 	1250 1850 1250 1950
 Wire Wire Line
-	3900 4650 3900 5000
+	3900 4650 3900 4850
 Wire Wire Line
-	3900 5000 1700 5000
-Wire Wire Line
-	1700 5000 1700 4500
-Wire Wire Line
-	3800 4650 3800 4900
-Wire Wire Line
-	3800 4900 1600 4900
-Wire Wire Line
-	1600 4900 1600 4500
-Wire Wire Line
-	3700 4650 3700 4800
-Wire Wire Line
-	3700 4800 1500 4800
-Wire Wire Line
-	1500 4800 1500 4500
-Wire Wire Line
-	1400 4500 1400 4700
-Wire Wire Line
-	1400 4700 2700 4700
-Wire Wire Line
-	2700 4700 2700 3350
-Wire Wire Line
-	2700 3350 3600 3350
+	3700 4650 3700 4750
 Wire Wire Line
 	3600 3350 3600 3450
 $Comp
@@ -3459,15 +3418,6 @@ Wire Bus Line
 Wire Wire Line
 	3600 4650 3600 5400
 Wire Wire Line
-	3700 4800 3700 5400
-Connection ~ 3700 4800
-Wire Wire Line
-	3800 4900 3800 5400
-Connection ~ 3800 4900
-Wire Wire Line
-	3900 5000 3900 5400
-Connection ~ 3900 5000
-Wire Wire Line
 	4000 4650 4000 5400
 Wire Wire Line
 	4100 4650 4100 5400
@@ -3492,21 +3442,21 @@ Entry Wire Line
 Entry Wire Line
 	4200 5500 4300 5400
 Text Label 3600 5300 0    50   ~ 0
-1
+15
 Text Label 3700 5300 0    50   ~ 0
-2
+16
 Text Label 3800 5300 0    50   ~ 0
-3
+17
 Text Label 3900 5300 0    50   ~ 0
-4
+18
 Text Label 4000 5300 0    50   ~ 0
-5
-Text Label 4100 5300 0    50   ~ 0
-6
-Text Label 4200 5300 0    50   ~ 0
-7
-Text Label 4300 5300 0    50   ~ 0
 8
+Text Label 4100 5300 0    50   ~ 0
+9
+Text Label 4200 5300 0    50   ~ 0
+10
+Text Label 4300 5300 0    50   ~ 0
+14
 Text Label 6000 5800 0    50   ~ 0
 A
 Text Label 6200 5800 0    50   ~ 0
@@ -4579,17 +4529,17 @@ Wire Wire Line
 Wire Wire Line
 	5100 4650 5100 5400
 Text Label 4500 5300 0    50   ~ 0
-9
-Text Label 4600 5300 0    50   ~ 0
-10
-Text Label 4800 5300 0    50   ~ 0
 11
-Text Label 4900 5300 0    50   ~ 0
+Text Label 4600 5300 0    50   ~ 0
 12
-Text Label 5000 5300 0    50   ~ 0
+Text Label 4800 5300 0    50   ~ 0
 13
+Text Label 4900 5300 0    50   ~ 0
+1
+Text Label 5000 5300 0    50   ~ 0
+2
 Text Label 5100 5300 0    50   ~ 0
-14
+3
 Entry Wire Line
 	4400 5500 4500 5400
 Entry Wire Line
@@ -6118,13 +6068,13 @@ Wire Wire Line
 Wire Wire Line
 	5500 4650 5500 5400
 Text Label 5200 5300 0    50   ~ 0
-15
+5
 Text Label 5300 5300 0    50   ~ 0
-16
+4
 Text Label 5400 5300 0    50   ~ 0
-17
+6
 Text Label 5500 5300 0    50   ~ 0
-18
+7
 Entry Wire Line
 	5100 5500 5200 5400
 Entry Wire Line
@@ -6133,6 +6083,43 @@ Entry Wire Line
 	5300 5500 5400 5400
 Entry Wire Line
 	5400 5500 5500 5400
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J2
+U 1 1 5E57C780
+P 1700 4750
+F 0 "J2" H 1750 5067 50  0000 C CNN
+F 1 "Conn_02x04_Counter_Clockwise" H 1750 4976 50  0000 C CNN
+F 2 "misc:SOIC_clipProgSmall" H 1700 4750 50  0001 C CNN
+F 3 "~" H 1700 4750 50  0001 C CNN
+	1    1700 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 4550 1400 4650
+Wire Wire Line
+	1400 4650 1500 4650
+Wire Wire Line
+	1500 4950 1400 4950
+Wire Wire Line
+	1400 4950 1400 5050
+Wire Wire Line
+	2000 4650 2100 4650
+Wire Wire Line
+	2100 4650 2100 3350
+Wire Wire Line
+	2100 3350 3600 3350
+Connection ~ 3700 4750
+Wire Wire Line
+	3700 4750 3700 5400
+Wire Wire Line
+	2000 4750 3700 4750
+Connection ~ 3800 4950
+Wire Wire Line
+	3800 4950 3800 5400
+Wire Wire Line
+	3800 4650 3800 4950
+Wire Wire Line
+	2000 4950 3800 4950
 Wire Bus Line
 	800  6100 800  9850
 Wire Bus Line
@@ -6141,4 +6128,9 @@ Wire Bus Line
 	1800 7250 20600 7250
 Wire Bus Line
 	1800 5500 5400 5500
+Connection ~ 3900 4850
+Wire Wire Line
+	3900 4850 3900 5400
+Wire Wire Line
+	2000 4850 3900 4850
 $EndSCHEMATC

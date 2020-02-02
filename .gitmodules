@@ -7,3 +7,6 @@
 [submodule "lib/digikey-kicad-library"]
 	path = lib/digikey-kicad-library
 	url = https://github.com/digikey/digikey-kicad-library.git
+[submodule "lib/SOICbite"]
+	path = lib/SOICbite
+	url = https://github.com/SimonMerrett/SOICbite.git
